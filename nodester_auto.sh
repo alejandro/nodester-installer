@@ -177,18 +177,17 @@ case $whoami in
     echo ${NOCOLR}
     sleep 1;
     n 0.4.12
-    n stable
-    n 0.4.12
+    n stable # keep on stable to avoid npm fix
 
-    echo ${BLDCYA};
-    echo ".----------------------------------------------------------.";
-    echo "| Node: NPM fix for n (until patched)                      |";
-    echo "'----------------------------------------------------------'";
-    echo ${NOCOLR}
-    sleep 1;
-    cd /usr/local/bin
-    rm npm
-    ln -s /usr/local/n/current/bin/npm npm
+    #echo ${BLDCYA};
+    #echo ".----------------------------------------------------------.";
+    #echo "| Node: NPM fix for n (until patched)                      |";
+    #echo "'----------------------------------------------------------'";
+    #echo ${NOCOLR}
+    #sleep 1;
+    #cd /usr/local/bin
+    #rm npm
+    #ln -s /usr/local/n/current/bin/npm npm
 
     echo ${BLDCYA};
     echo ".----------------------------------------------------------.";
@@ -275,16 +274,16 @@ case $whoami in
     chown nodester git
     chgrp nodester git
 
-    echo ${BLDCYA};
-    echo ".----------------------------------------------------------.";
-    echo "| NodesterHelper: Setup CHRoot                             |";
-    echo "'----------------------------------------------------------'";
-    echo ${NOCOLR}
-    sleep 1;
-    cd /opt
-    wget http://nodester.com/sandbox.tar.gz
-    tar -zxvf sandbox.tar.gz 
-    rm sandbox.tar.gz
+    #echo ${BLDCYA};
+    #echo ".----------------------------------------------------------.";
+    #echo "| NodesterHelper: Setup CHRoot                             |";
+    #echo "'----------------------------------------------------------'";
+    #echo ${NOCOLR}
+    #sleep 1;
+    #cd /opt
+    #wget http://nodester.com/sandbox.tar.gz
+    #tar -zxvf sandbox.tar.gz 
+    #rm sandbox.tar.gz
 
     echo ${BLDCYA};
     echo ".----------------------------------------------------------.";
