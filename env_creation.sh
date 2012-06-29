@@ -66,7 +66,8 @@ case $whoami in
 		esac
     echo "cloning Nodester from https://github.com/nodester/nodester.git"
     echo ;
-    sh -c "git clone https://github.com/nodester/nodester.git $NODESTER_HOME_DIR/nodester"
+    sh -c "git clone https://github.com/dejl/nodester.git $NODESTER_HOME_DIR/nodester"
+    sh -c "cd $NODESTER_HOME_DIR; git branch light"
     echo "Installing the git folder shell to restrict git to per user folders"
     echo ;
     echo "writing public key to $NODESTER_HOME_DIR/.ssh/authorized_keys"
